@@ -5,7 +5,15 @@
 
 // Dimensions
 $max-content-width: {{ site.max_width }};
+.video-container {
+  padding-top: 10px; /* Adjust the value as needed */
+  text-align: center; /* Center-align the content horizontally */
+}
 
+.video-container iframe {
+  display: block; /* Make the iframe a block-level element */
+  margin: 0 auto; /* Center-align the block-level element horizontally */
+}
 @import
   "variables",
   "themes",

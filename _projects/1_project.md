@@ -1,46 +1,31 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: RoboCare
+description: An Alexa-Enabled Human-Robot Interface for Safely Caring for Covid-19 Patients. With K. Shah and M. Mehtaz
+img: assets/img/robocare1.jpg
 importance: 1
-category: work
+category: fun
 ---
+**Project By:** Tanmay Agarwal, Kathan Shah and Muntaqim Mehtaz \\
+**Supervisor:** Dr. Junaed Sattar
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<p>This project simulates a TiaGo humanoid robot as a "Home Caretaking Robot". This allows a user to use an alexa in their apartment to command a linked robot anywhere in the world. Built during the coronavirus pandemic as a proof-of-concept to care for contagious patients in a safe manner for hospital staff.</p>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<p>Users can communicate with the robot through two modes:</p>
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+<ul>
+  <li>Hand Gestures - Each room in the simulation is given a number. To tell the robot to go to room 1, hold up one finger; two fingers for room two and so forth</li>
+  <li>Voice Commands - The robot can communicate over Alexa. Simply say "Alexa, tell RoboCare to go to room X".</li>
+</ul>
 
+
+Find code and instructions on this <a href="https://github.com/tanmay1908/Covid-HRI">Github Repository</a>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/robocare_overview.jpg" title="Project Infrastructure" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Overview of the project's infrastructure interacting between the robotics stack, cloud stack for Alexa, and computer vision stack for hand gesture detection.
 </div>
 
 You can also put regular text between your rows of images.
@@ -49,32 +34,13 @@ You describe how you toiled, sweated, *bled* for your project, and then... you r
 
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/robocare_sim.jpg" title="simulation environment" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/robocare1.jpg" title="TiaGo humanoid robot in sim." class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Left: Simulation Environment setup with different rooms. Right: The TiaGo Humanoid Robot completing a task inside the simulator.
 </div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
