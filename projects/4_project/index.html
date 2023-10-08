@@ -12,10 +12,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tanmay  Agarwal | blog</title>
+    <title>Tanmay  Agarwal | Scuba Diver Motion Prediction</title>
     <meta name="author" content="Tanmay  Agarwal" />
-    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-" />
+    <meta name="description" content="The world's first underwater motion prediction algorithm. With M. Fulton and J. Sattar" />
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website" />
 
 
@@ -34,7 +33,7 @@
     <!-- Styles -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://www.tanmay-agarwal.com/blog/">
+    <link rel="canonical" href="https://www.tanmay-agarwal.com/projects/4_project/">
 
     <!-- Dark Mode -->
     <script src="/assets/js/theme.js"></script>
@@ -80,8 +79,8 @@
               </li>
 
               <!-- Toogle theme mode -->
-              <div class = "toggle-container">
-                <a id = "light-toggle">
+              <div class="toggle-container">
+                <a id="light-toggle">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
                 </a>
@@ -94,27 +93,89 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <div class="post">
+      <!-- page.html -->
+        <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2></h2>
-  </div>
+          <header class="post-header">
+            <h1 class="post-title">Scuba Diver Motion Prediction</h1>
+            <p class="post-description">The world's first underwater motion prediction algorithm. With M. Fulton and J. Sattar</p>
+          </header>
 
+          <article>
+            <p><strong>Authors:</strong> Tanmay Agarwal, Michael Fulton and Junaed Sattar</p>
 
-  <ul class="post-list">
-    
-  </ul>
+<p>Motion prediction for the underwater domain is much more complex than on the ground. Your agents (scuba divers) can move in 6 degrees of freedom, images have a constant blue background, and IMU measurements are noisy and unreliable.</p>
 
-  
+<p>When aquatic robots try to follow human scuba divers in this environment, they often lose track of humans when they turn. To address this proble, we developed a novel perception framework to predict the future trajectory of scuba divers in real-time. By predicting the motion of their target, this module aims to allow aquatic robots to anticipate the movement of humans and be able to follow them better as they dive.</p>
 
+<p>Paper published in IROS 2021 <a href="https://ieeexplore.ieee.org/document/9636374" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/diverpred_model-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/diverpred_model-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/diverpred_model-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/diverpred_model.jpeg" title="Model Architecture">
+
+  </picture>
+
+</figure>
+
+        
+        <div class="caption">
+            Model architecture for the motion prediction framework.
+        </div>
+    </div>
 </div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/diverpred1-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/diverpred1-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/diverpred1-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/diverpred1.jpg" title="sample output 1">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/diverpred2-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/diverpred2-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/diverpred2-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/diverpred2.jpg" title="sample output 2">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Sample Outputs from the motion prediction algorithm. Darker colors are more in the future.
+</div>
+
+          </article>
+
+        </div>
 
     </div>
 
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
-        &copy; Copyright 2023 Tanmay  Agarwal. 
+        © Copyright 2023 Tanmay  Agarwal. 
       </div>
     </footer>
 

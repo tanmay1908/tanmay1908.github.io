@@ -12,10 +12,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tanmay  Agarwal | blog</title>
+    <title>Tanmay  Agarwal | RoboCare</title>
     <meta name="author" content="Tanmay  Agarwal" />
-    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-" />
+    <meta name="description" content="An Alexa-Enabled Human-Robot Interface for Safely Caring for Covid-19 Patients. With K. Shah and M. Mehtaz" />
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website" />
 
 
@@ -34,7 +33,7 @@
     <!-- Styles -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://www.tanmay-agarwal.com/blog/">
+    <link rel="canonical" href="https://www.tanmay-agarwal.com/projects/1_project/">
 
     <!-- Dark Mode -->
     <script src="/assets/js/theme.js"></script>
@@ -80,8 +79,8 @@
               </li>
 
               <!-- Toogle theme mode -->
-              <div class = "toggle-container">
-                <a id = "light-toggle">
+              <div class="toggle-container">
+                <a id="light-toggle">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
                 </a>
@@ -94,27 +93,99 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <div class="post">
+      <!-- page.html -->
+        <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2></h2>
-  </div>
+          <header class="post-header">
+            <h1 class="post-title">RoboCare</h1>
+            <p class="post-description">An Alexa-Enabled Human-Robot Interface for Safely Caring for Covid-19 Patients. With K. Shah and M. Mehtaz</p>
+          </header>
 
+          <article>
+            <p><strong>Project By:</strong> Tanmay Agarwal, Kathan Shah and Muntaqim Mehtaz <br>
+<strong>Supervisor:</strong> Dr. Junaed Sattar</p>
 
-  <ul class="post-list">
-    
-  </ul>
+<p>This project simulates a TiaGo humanoid robot as a "Home Caretaking Robot". This allows a user to use an alexa in their apartment to command a linked robot anywhere in the world. Built during the coronavirus pandemic as a proof-of-concept to care for contagious patients in a safe manner for hospital staff.</p>
 
-  
+<p>Users can communicate with the robot through two modes:</p>
 
+<ul>
+  <li>Hand Gestures - Each room in the simulation is given a number. To tell the robot to go to room 1, hold up one finger; two fingers for room two and so forth</li>
+  <li>Voice Commands - The robot can communicate over Alexa. Simply say "Alexa, tell RoboCare to go to room X".</li>
+</ul>
+
+<p>Find code and instructions on this <a href="https://github.com/tanmay1908/Covid-HRI" target="_blank" rel="noopener noreferrer">Github Repository</a></p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/robocare_overview-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/robocare_overview-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/robocare_overview-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/robocare_overview.jpg" title="Project Infrastructure">
+
+  </picture>
+
+</figure>
+
+    </div>
+<div class="caption">
+    Overview of the project's infrastructure interacting between the robotics stack, cloud stack for Alexa, and computer vision stack for hand gesture detection.
 </div>
+
+You can also put regular text between your rows of images.
+Say you wanted to write a little bit about your project before you posted the rest of the images.
+You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
+
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/robocare_sim-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/robocare_sim-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/robocare_sim-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/robocare_sim.jpg" title="simulation environment">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/robocare1-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/robocare1-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/robocare1-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/robocare1.jpg" title="TiaGo humanoid robot in sim.">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Left: Simulation Environment setup with different rooms. Right: The TiaGo Humanoid Robot completing a task inside the simulator.
+</div>
+</div>
+
+          </article>
+
+        </div>
 
     </div>
 
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
-        &copy; Copyright 2023 Tanmay  Agarwal. 
+        © Copyright 2023 Tanmay  Agarwal. 
       </div>
     </footer>
 
